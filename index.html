@@ -3447,7 +3447,7 @@ async function verifyAdminView(){
   const hashArray = Array.from(new Uint8Array(hashBuffer));
   const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 
-  if(hashHex === "552e1858a7e0c46b5a3e14713833b3a39e8e2fa511dc4050eb4363a033f67ba8"){
+  if(hashHex === "8d03541ceca9b01538fc1e7790b4d4554b5dfa91b4904a60032fcf26e64ec800"){
     document.getElementById("admVisits").textContent = reactions.visits || 1;
     document.getElementById("admBills").textContent = billCount - 100;
     document.getElementById("admChai").textContent = reactions.chai;
